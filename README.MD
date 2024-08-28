@@ -21,3 +21,7 @@ This project is an experiment to explore how iOS navigation can be implemented u
 4. **Interactive Pop Gesture**:
    - The `interactivePopGestureRecognizer` is enabled for the entire screen to allow swipe-back navigation.
    - The delegate for the `interactivePopGestureRecognizer` is set to the `UIViewControllerWrapper` to manage the gesture.
+
+## Demo 
+[![Video](https://img.youtube.com/vi/HdPoG59DYws/0.jpg)](https://www.youtube.com/shorts/HdPoG59DYws)
+
