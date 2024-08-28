@@ -1,22 +1,23 @@
-# Compose Multiplatform Application
+# Compose Multiplatform Application with IOS native Navigation for IOS App in common code and Voyager for other platforms
 
-## Before running!
- - check your system with [KDoctor](https://github.com/Kotlin/kdoctor)
- - install JDK 17 or higher on your machine
- - add `local.properties` file to the project root and set a path to Android SDK there
+## Experiment: iOS Navigation with Compose Multiplatform 🔴🚧⌛🔄🟢
 
-### Android
-To run the application on android device/emulator:  
- - open project in Android Studio and run imported android run configuration
+This project is an experiment to explore how iOS navigation can be implemented using Compose Multiplatform. The goal is to leverage Kotlin Multiplatform capabilities to create a seamless navigation experience on both Android and iOS platforms.
 
-To build the application bundle:
- - run `./gradlew :composeApp:assembleDebug`
- - find `.apk` file in `composeApp/build/outputs/apk/debug/composeApp-debug.apk`
-Run android simulator UI tests: `./gradlew :composeApp:pixel5Check`
+### How It Works
 
-### iOS
-To run the application on iPhone device/simulator:
- - Open `iosApp/iosApp.xcproject` in Xcode and run standard configuration
- - Or use [Kotlin Multiplatform Mobile plugin](https://plugins.jetbrains.com/plugin/14936-kotlin-multiplatform-mobile) for Android Studio
-Run iOS simulator UI tests: `./gradlew :composeApp:iosSimulatorArm64Test`
+1. **Navigation Setup**: 
+   - The `Navigator` class is used to manage navigation between different screens.
+   - The `BottomSheetNavigator` is used to handle bottom sheet navigation.
 
+2. **View Controller Wrapping**:
+   - The `extendedComposeViewController` function creates a `UIViewController` that hosts a Compose UI.
+   - The `UIViewControllerWrapper` class wraps another `UIViewController` and adds gesture recognizer functionality to handle swipe gestures.
+
+3. **Gesture Handling**:
+   - The `UIViewControllerWrapper` implements the `UIGestureRecognizerDelegateProtocol` to handle swipe gestures.
+   - Swipe gestures are added to the view controller to enable navigation through swiping.
+
+4. **Interactive Pop Gesture**:
+   - The `interactivePopGestureRecognizer` is enabled for the entire screen to allow swipe-back navigation.
+   - The delegate for the `interactivePopGestureRecognizer` is set to the `UIViewControllerWrapper` to manage the gesture.
