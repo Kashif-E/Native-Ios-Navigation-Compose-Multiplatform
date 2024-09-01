@@ -1,5 +1,7 @@
 # Compose Multiplatform Application with IOS native Navigation for IOS App in common code and Voyager for other platforms
 
+- Featured in [Kotlin Weekly](https://mailchi.mp/kotlinweekly/kotlin-weekly-422)
+
 ## Experiment: iOS Navigation with Compose Multiplatform 🔴🚧⌛🔄🟢
 
 This project is an experiment to explore how iOS navigation can be implemented using Compose Multiplatform. The goal is to leverage Kotlin Multiplatform capabilities to create a seamless navigation experience on both Android and iOS platforms.
