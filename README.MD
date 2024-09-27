@@ -1,6 +1,11 @@
 # Compose Multiplatform Application with IOS native Navigation for IOS App in common code and Voyager for other platforms
-- Looking to build with KMP and CMP? I am Open to work Contact me on [LinkedIn](https://www.linkedin.com/in/kashif-mehmood-km/)
+- Looking to build with KMP and CMP? Let's connect [LinkedIn](https://www.linkedin.com/in/kashif-mehmood-km/)
 - Featured in [Kotlin Weekly](https://mailchi.mp/kotlinweekly/kotlin-weekly-422)
+
+#### Want to support my work ?
+<a href="https://www.buymeacoffee.com/kashifmehmood"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=kashifmehmood&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" /></a>
+
+
 
 ## Experiment: iOS Navigation with Compose Multiplatform 🔴🚧⌛🔄🟢
 
